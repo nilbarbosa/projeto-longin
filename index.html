@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tela de long-in</title>
+    <title>tela de login</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>login</h1>
+                <p>seja bem vindo(a) de volta. Faça seu login para acessar su conta e poder fazer as configurações no seu ambiente.</p>
+                <div class="cadastro">
+                    <div id="img"> </div>
+                    <label for=""></label>
+                    <form action="cadastro.php" method="get">
+                        <label for="iemail">seu email</label>
+                        <input type="email" name="email" id="iemail">
+                    </form>
+                    <form action="cadastro.php" method="get">
+                        <label for="isenha">senha</label>
+                        <input type="password" name="senha" id="isenha">
+                    </form>
+                   <input type="submit" value="entrar">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
