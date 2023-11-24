@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tela de login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -16,16 +18,22 @@
                 <p>seja bem vindo(a) de volta. Faça seu login para acessar su conta e poder fazer as configurações no seu ambiente.</p>
                 <div class="cadastro">
                     <div id="img"> </div>
-                    <label for=""></label>
-                    <form action="cadastro.php" method="get">
-                        <label for="iemail">seu email</label>
-                        <input type="email" name="email" id="iemail">
+                    <form action="login.php" method="post" aria-autocomplete="on">
+                        <div class="campo">
+                            <i class="material-icons">person</i>
+                            <input type="email" name="email" id="iemail" placeholder="seu email" autocomplete="email" required maxlength="30" minlength="10">
+                            <label for="iemail">login</label>
+                        </div>
+                        <div class="campo">
+                            <i class="material-icons">vpn_key</i>
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                            <label for="isenha">senha</label>
+                        </div>
+                        <input type="submit" value="entrar">
+                        <a href="esqueci.html">esqueci a senha  <i class="material-icons">mail</i>
+                        </a>
                     </form>
-                    <form action="cadastro.php" method="get">
-                        <label for="isenha">senha</label>
-                        <input type="password" name="senha" id="isenha">
-                    </form>
-                   <input type="submit" value="entrar">
+                    </div>
                 </div>
             </div>
         </section>
